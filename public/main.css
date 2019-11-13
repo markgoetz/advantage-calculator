@@ -1,0 +1,379 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Cinzel, serif;
+}
+
+.u-visuallyHidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-full-height {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.o-app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #171717;
+  background-image: url("./assets/images/wall.png");
+}
+
+.o-app__hd {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 20px;
+}
+
+.o-app__bd {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 20px;
+}
+
+.o-h-list {
+  display: flex;
+}
+
+.o-h-list > * + * {
+  margin-left: 10px;
+}
+
+.o-layout {
+  display: flex;
+  min-height: 100%;
+}
+
+.o-layout__sidebar {
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: 300px;
+}
+
+.o-layout__main {
+  margin-left: 20px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.o-media {
+  display: flex;
+  align-items: center;
+}
+
+.o-media__icon {
+  flex-basis: 45px;
+  flex-shrink: 0;
+}
+
+.o-media__bd {
+  margin-left: 10px;
+}
+
+.o-v-list > * + * {
+  margin-top: 20px;
+}
+
+.o-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+}
+
+.o-vertical__static {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.o-vertical__grow {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.o-vr {
+  padding-bottom: 10px;
+}
+
+.o-vr--x2 {
+  padding-bottom: 20px;
+}
+
+.o-vr--x3 {
+  padding-bottom: 30px;
+}
+
+.o-vr--x4 {
+  padding-bottom: 40px;
+}
+
+.c-brand {
+  font-family: "UnifrakturCook", cursive;
+  color: #F7D423;
+  font-size: 72px;
+}
+
+.c-btn {
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 4px;
+  background-color: #397304;
+  box-shadow: 0 2px #2A5601;
+  color: #F4EED1;
+  font-size: 48px;
+  line-height: 44px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-checkbox {
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #605F57;
+  font-family: Cinzel, serif;
+  border: 0;
+  box-shadow: inset 1px 1px 1px #605F57;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.c-checkbox:checked {
+  background-color: #397304;
+  box-shadow: inset 1px 1px 1px #2A5601;
+  background-image: url("assets/images/check.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.c-dark-box {
+  padding: 10px;
+  background-color: rgba(21, 3, 1, 0.43);
+}
+
+.c-graph {
+  display: block;
+  height: 100%;
+}
+
+.c-graph__hd {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.c-graph__caption {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.c-graph__bd {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  height: 100%;
+}
+
+.c-graph__col {
+  height: calc(100% - 50px);
+  position: relative;
+  flex-grow: 1;
+  margin-top: 50px;
+}
+
+.c-graph__col-hd {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin-top: -50px;
+}
+
+.c-graph__cell {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.5s;
+}
+
+.c-hdg {
+  display: block;
+  color: #F8E795;
+}
+
+.c-hdg--1 {
+  font-size: 36px;
+}
+
+.c-hdg--2 {
+  font-size: 24px;
+}
+
+.c-input {
+  min-height: 44px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  padding: 0 15px;
+  color: #605F57;
+  font-family: Cinzel, serif;
+  border: 0;
+  box-shadow: inset 1px 1px 1px #605F57;
+  width: 220px;
+}
+
+.c-legend-text {
+  font-family: Alegreya, serif;
+  font-size: 18px;
+  color: #F8E795;
+  line-height: 1.5;
+}
+
+.c-percentage {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px;
+  text-align: center;
+  min-width: 40px;
+  border-radius: 15px;
+}
+
+.c-percentage--positive {
+  color: #254C03;
+  background-color: #76D622;
+}
+
+.c-percentage--neutral {
+  color: #605F57;
+  background-color: #F4EED1;
+}
+
+.c-percentage--negative {
+  color: #4E0500;
+  background-color: #FF553D;
+}
+
+.c-toggle {
+  display: flex;
+  justify-content: stretch;
+  height: 44px;
+  align-items: center;
+}
+
+.c-toggle__option {
+  padding: 10px 20px;
+  background-color: #F4EED1;
+  color: #605F57;
+  box-shadow: 0 2px #D4C474;
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+:checked + .c-toggle__option {
+  background-color: #397304;
+  color: #FFFFFF;
+  box-shadow: 0 2px #2A5601;
+}
+
+.c-toggle__option:first-of-type {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c-toggle__option:last-of-type {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/*# sourceMappingURL=main.css.map */

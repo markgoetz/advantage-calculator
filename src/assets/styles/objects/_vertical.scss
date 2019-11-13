@@ -1,0 +1,16 @@
+.o-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+}
+
+.o-vertical__static {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.o-vertical__grow {
+    flex-grow: 1;
+    flex-shrink: 1;
+}

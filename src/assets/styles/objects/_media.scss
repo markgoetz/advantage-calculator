@@ -1,0 +1,13 @@
+.o-media {
+    display: flex;
+    align-items: center;
+}
+
+.o-media__icon {
+    flex-basis: 45px;
+    flex-shrink: 0;
+}
+
+.o-media__bd {
+    margin-left: 10px;
+}

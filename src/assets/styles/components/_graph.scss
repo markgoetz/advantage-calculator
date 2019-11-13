@@ -1,0 +1,41 @@
+.c-graph {
+    display: block;
+    height: 100%;
+}
+
+.c-graph__hd {
+    @include visuallyHidden;
+}
+
+.c-graph__caption {
+    @include visuallyHidden;
+}
+
+.c-graph__bd {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100%;
+}
+
+.c-graph__col {
+    height: calc(100% - 50px);
+    position: relative;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+
+.c-graph__col-hd {
+    color: $color-white;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin-top: -50px;
+}
+
+.c-graph__cell {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom .5s;
+}

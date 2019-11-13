@@ -1,0 +1,22 @@
+.c-checkbox {
+    min-height: 44px;
+    min-width: 44px;
+    border-radius: 4px;
+    background-color: $color-white;
+    color: $color-grey-dark;
+    font-family: $font-family-primary;
+    border: 0;
+    box-shadow: inset 1px 1px 1px $color-grey-dark;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.c-checkbox:checked {
+    background-color: $color-secondary;
+    box-shadow: inset 1px 1px 1px $color-secondary-dark;
+    background-image: url('assets/images/check.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}

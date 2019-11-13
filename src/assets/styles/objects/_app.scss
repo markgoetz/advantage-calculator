@@ -1,0 +1,20 @@
+.o-app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-grey-darkest;
+    background-image: url('./assets/images/wall.png');
+}
+
+.o-app__hd {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.o-app__bd {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 20px;
+}

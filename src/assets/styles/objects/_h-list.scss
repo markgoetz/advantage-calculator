@@ -1,0 +1,7 @@
+.o-h-list {
+    display: flex;
+}
+
+.o-h-list > * + * {
+    margin-left: 10px;
+}

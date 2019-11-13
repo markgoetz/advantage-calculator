@@ -1,0 +1,23 @@
+.c-percentage {
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+    padding: 5px;
+    text-align: center;
+    min-width: 40px;
+    border-radius: 15px;
+}
+
+.c-percentage--positive {
+    color: $color-positive-dark;
+    background-color: $color-positive;
+}
+
+.c-percentage--neutral {
+    color: $color-grey-dark;
+    background-color: $color-grey-pale;
+}
+
+.c-percentage--negative {
+    color: $color-negative-dark;
+    background-color: $color-negative;
+}
