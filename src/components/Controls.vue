@@ -95,6 +95,12 @@
                 </li>
             </ul>
         </div>
+        <div class="o-vr o-vr--x2" />
+        <div class="c-dark-box u-text-center">
+            <span class="c-legend-text">
+                Copyright &copy; {{year}} <a href="https://markandrewgoetz.com/" class="c-link">Mark Goetz</a>
+            </span>
+        </div>
     </div>
 </template>
 
@@ -111,6 +117,9 @@ export default {
     computed: {
         value: function value() {
             return (this.use === 'dc' ? this.modifier : this.dc);
+        },
+        year: function year() {
+            return new Date().getFullYear();
         },
     },
     methods: {

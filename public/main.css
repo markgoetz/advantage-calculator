@@ -318,6 +318,10 @@ body, html {
   line-height: 1.5;
 }
 
+.c-link, .c-link:active, .c-link:visited {
+  color: #0CA3E4;
+}
+
 .c-percentage {
   font-size: 16px;
   font-weight: 700;
