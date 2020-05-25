@@ -2,8 +2,8 @@
     <div class="o-app">
         <header class="o-app__hd">
             <h1 class="u-text-center">
-                <div class="c-brand">Die Roll Success Calculator</div>
-                <div class="c-hdg c-hdg--2">for D20 RPG systems</div>
+                <div class="c-brand">D20 Success Calculator</div>
+                <div class="c-hdg c-hdg--2">for RPG systems</div>
             </h1>
         </header>
         <div class="o-app__bd">
