@@ -26,5 +26,8 @@
     "sass": "^1.26.11",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.12"
+  },
+  "resolutions": {
+    "url-parse": "^1.5.1"
   }
 }
