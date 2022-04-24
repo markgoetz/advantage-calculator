@@ -23,6 +23,11 @@
     position: relative;
     flex-grow: 1;
     margin-top: 50px;
+    border-left: dotted 1px $color-grey-pale;
+}
+
+.c-graph__col:first-child {
+    border-left: none;
 }
 
 .c-graph__col-hd {
